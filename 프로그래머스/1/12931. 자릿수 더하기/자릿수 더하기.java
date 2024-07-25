@@ -9,8 +9,14 @@ public class Solution {
         int count = 0;
         for (char c : arr) {
             count += c - '0';
-
         }
+
+        /*
+        * int -> char array
+        * char[] chars = ("" + i).toCharArray();
+        * or
+        * char[] chars = String.valueOf(i).toCharArray();
+        */
         
         return count;
     }
