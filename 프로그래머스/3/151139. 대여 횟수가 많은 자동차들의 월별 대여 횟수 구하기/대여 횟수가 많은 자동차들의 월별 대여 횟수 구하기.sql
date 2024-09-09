@@ -1,13 +1,13 @@
-select month(start_date)as MONTH,car_id as CAR_ID,count(*) as RECORDS
-from CAR_RENTAL_COMPANY_RENTAL_HISTORY
-where month(start_date) between 8 and 10  and
-car_id in 
+SELECT month(start_date) AS MONTH, CAR_ID, COUNT(*) AS RECORDS
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+WHERE month(start_date) BETWEEN 8 AND 10 AND
+car_id IN
 (
-select car_id
-from CAR_RENTAL_COMPANY_RENTAL_HISTORY
-where month(start_date) between 8 and 10  
-group by car_id
-having count(*) >4
+    SELECT car_id
+    FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+    WHERE month(start_date) BETWEEN 8 AND 10  
+    GROUP BY car_id
+    HAVING COUNT(*) > 4
 )
-group by car_id,month
-order by month asc ,car_id desc
+GROUP BY car_id, month
+ORDER BY month, car_id DESC
