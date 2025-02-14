@@ -1,10 +1,10 @@
 # [level 1] 체육복 - 42862 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42862) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42862#qna) 
 
 ### 성능 요약
 
-메모리: 77.9 MB, 시간: 0.04 ms
+메모리: 80.5 MB, 시간: 0.53 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 08월 14일 09:41:11
+2025년 02월 14일 17:43:18
 
 ### 문제 설명
 
